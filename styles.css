@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+}
+.container{
+  display: flex;
+  height:100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.card-container{
+  width:40rem;
+  height:30rem;
+  background-color: rgb(179, 228, 181);
+  border-radius: 15px;
+  padding:5%;
+}
+
+main {
+  padding: 1rem;
+  background-color: hsl(230, 100%, 99%)
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
