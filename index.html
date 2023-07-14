@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <title>Frontend Mentor | Interactive pricing component</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <main>
-      <div class="container text-center">
-      <div class="columns">
-        <div class="column ">
-          <div class="header-section">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="container is-fluid text-center  pr-0 pl-0">
+      <div class="header-section">
+        <div>
           <h1>Simple, traffic-based pricing</h1>
           <h2>Sign-up for our 30-day trial. No credit card required.</h2>
-          </div>
-      
-        <div class="card-container">
-          <div class="is-flex"> <p>Pageviews</p> <p> $ /month</p>
-          </div>
-          <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-          </div>
-          <div>
-         <label> Monthly Billing</label><label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-          <label>Yearly Billing 25% <span>discount</span></label>
-          </div class="is-flex">
-          Unlimited websites
-          100% data ownership
-          Email reports
-        
-          Start my trial
         </div>
-        
+      </div>
+      <div class="card-div">
+        <div class="card-container">
+          <div class="is-flex is-justify-content-space-between views-container ">
+            <p class="page-views"><span id="views"></span>K Pageviews</p>
+            <p><span id="price"></span>/month</p>
+          </div>
+          <div class="slider-container">
+            <input type="range" min="0" max="200" value="100" class="slider" id="myRange" />
+          </div>
+          <div class="is-flex is-justify-content-center">
+            <label class="toggle">
+              <label class="toggle-label">Monthly Billing</label>
+              <input class="toggle-checkbox" type="checkbox" id="myToggle" />
+              <div class="toggle-switch"></div>
+              <label  class="toggle-label"> Billing </label>
+              <span class="discount">
+                <span class="mobile-percentage">-25%</span>
+                <span class="desktop-percentage">25% discount</span>
+              </span>
+            </label>
+          </div>
 
+          <hr />
+          <div class=" bottom-section is-flex is-justify-content-space-between ">
+            <ul>
+              <li><img src="./images/icon-check.svg" /> Unlimited websites</li>
+              <li><img src="./images/icon-check.svg" /> 100% data ownership</li>
+              <li><img src="./images/icon-check.svg" /> Email reports</li>
+            </ul>
+            <div>
+              <button class="is-link is-rounded trial-button">Start my trial</button>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
+  </main>
+</body>
 
-    </main>
-  </body>
 </html>
