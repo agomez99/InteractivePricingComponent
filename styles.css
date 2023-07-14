@@ -218,6 +218,9 @@ li{
   display: none;
 }
 @media (max-width: 600px) {
+  h1{
+    font-size: 1.5rem;
+  }
   .page-views{
     text-align: center;
   }
@@ -226,13 +229,11 @@ li{
   }
   .card-container{
     width:auto;
+    padding:5%;
   }
 .slider-container{
   width:300px;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  display: flex;
+
 }
 
 .bottom-section{
@@ -242,7 +243,7 @@ li{
   flex-direction: column;
 }
 .mobile-percentage{
-  display:block;
+  display:inline-flex;
   font-size: .9rem;
 }
 .desktop-percentage{
