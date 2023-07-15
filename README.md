@@ -4,8 +4,8 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/agomez99/InteractivePricingComponent](https://github.com/agomez99/InteractivePricingComponent)
+- Live Site URL: [https://agomez99.github.io/InteractivePricingComponent/](https://agomez99.github.io/InteractivePricingComponent/)
 
 ## My process
 
